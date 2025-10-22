@@ -9,6 +9,8 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 from django.db.models import Q
 from django.utils import timezone
+from django.views.decorators.csrf import csrf_exempt
+from django.utils.decorators import method_decorator
 
 # Authentication helpers
 from rest_framework_simplejwt.views import TokenObtainPairView
@@ -30,6 +32,7 @@ class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
         return data
 
 
+@method_decorator(csrf_exempt, name="dispatch")
 class CustomTokenObtainPairView(TokenObtainPairView):
     permission_classes = (AllowAny,)
     serializer_class = CustomTokenObtainPairSerializer

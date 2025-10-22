@@ -1,6 +1,5 @@
 from pathlib import Path
 import os
-from datetime import timedelta
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -73,15 +72,6 @@ REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
         "rest_framework_simplejwt.authentication.JWTAuthentication",
     ),
-}
-
-# Simple JWT configuration: make tokens expire after 7 days
-SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(days=7),
-    'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
-    # keep defaults for rotation/blacklist unless you want different behavior
-    'ROTATE_REFRESH_TOKENS': False,
-    'BLACKLIST_AFTER_ROTATION': False,
 }
 
 CORS_ALLOW_ALL_ORIGINS = True
