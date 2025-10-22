@@ -1,0 +1,94 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.env/
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+media/
+staticfiles/
+
+# If you are using Django migrations
+*/migrations/*.pyc
+*/migrations/*.pyo
+*/migrations/__pycache__/
+
+# Pytest
+.cache/
+.pytest_cache/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment variables files
+.env
+.env.*
+
+# backups folder created by the assistant
+backups/
+
+# Logs
+*.log
+
+# Git
+*.orig
+
+# Node / npm if present
+node_modules/
+
+# Coverage
+htmlcov/
+.coverage
+coverage.xml
+
+# macOS
+*.DS_Store
+
+# Windows
+Thumbs.db
+
+# JetBrains
+.idea/
+
+# Local python cache
+pip-log.txt
+
+# Other
+*.pot
+
