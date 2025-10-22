@@ -13,7 +13,7 @@ Django backend com DRF para o sistema de agendamentos dentários.
 
 **Soluções aplicadas:**
 - Ajustada interface TypeScript no frontend para corresponder aos modelos Django
-- URLs de API já configuradas para http://127.0.0.1:8000
+- URLs de API já configuradas para 
 - Modificadas as permissions para AllowAny temporariamente para testes
 
 ### 2. Setup e Execução
@@ -51,10 +51,10 @@ python manage.py runserver
 
 ### 3. Endpoints Disponíveis
 
-- **Pacientes:** http://127.0.0.1:8000/api/pacientes/
-- **Agendamentos:** http://127.0.0.1:8000/api/agendamentos/
-- **Admin:** http://127.0.0.1:8000/admin/
-- **Auth JWT:** http://127.0.0.1:8000/api/auth/token/
+- **Pacientes:** /api/pacientes/
+- **Agendamentos:** /api/agendamentos/
+- **Admin:** /admin/
+- **Auth JWT:** /api/auth/token/
 
 ### 4. Estrutura de Dados
 
@@ -119,14 +119,14 @@ python manage.py runserver
 
 **Teste 1: API diretamente no navegador**
 ```
-http://127.0.0.1:8000/api/pacientes/
-http://127.0.0.1:8000/api/agendamentos/
+/api/pacientes/
+/api/agendamentos/
 ```
 Deve retornar JSON com dados.
 
 **Teste 2: Com PowerShell**
 ```powershell
-Invoke-WebRequest -Uri "http://127.0.0.1:8000/api/pacientes/" -Method GET
+Invoke-WebRequest -Uri "/api/pacientes/" -Method GET
 ```
 
 **Teste 3: Logs do console**
