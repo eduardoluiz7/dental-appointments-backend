@@ -7,7 +7,11 @@ SECRET_KEY = os.environ.get("DJANGO_SECRET", "dev-secret-key")
 
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://agendamentos-gabi.vercel.app/", "localhost"]
+ALLOWED_HOSTS = [
+    "https://agendamentos-gabi.vercel.app/", 
+    "localhost",
+    "eduardoluiz0.pythonanywhere.com",
+]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
